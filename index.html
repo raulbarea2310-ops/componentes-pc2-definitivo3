@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Componentes de mi PC</title>
+    <title>Componentes de mi PC - Comparación</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
-            text-align: center;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
         h1 {
             background-color: #333;
@@ -21,56 +21,100 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 40px;
             padding: 20px;
         }
-        .item {
+        .pair {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
             background-color: #fff;
-            padding: 10px;
+            padding: 15px;
             border-radius: 10px;
             box-shadow: 0 0 5px rgba(0,0,0,0.2);
-            width: 200px;
+            max-width: 450px;
         }
-        .item img {
-            max-width: 100%;
+        .pair-images {
+            display: flex;
+            gap: 20px;
+        }
+        .pair-images img {
+            width: 200px;
             border-radius: 5px;
         }
-        .item p {
-            margin: 5px 0 0 0;
-            font-weight: bold;
+        .comparison {
+            font-size: 14px;
+            color: #555;
+            max-width: 420px;
         }
     </style>
 </head>
 <body>
-    <h1>Componentes de mi PC</h1>
+    <h1>Comparación de Componentes de PC</h1>
+
+    <!-- Caja PC -->
     <div class="grid">
-        <div class="item">
-            <img src="img/caja1.png" alt="Caja PC">
-            <p>Caja PC</p>
+        <div class="pair">
+            <div class="pair-images">
+                <img src="img/caja1.png" alt="Caja 1">
+                <img src="img/caja2.png" alt="Caja 2">
+            </div>
+            <p class="comparison">Caja 1: Más compacta y económica. Caja 2: Mayor ventilación y espacio para gráficas grandes.</p>
         </div>
-        <div class="item">
-            <img src="img/placa1.png" alt="Placa Base">
-            <p>Placa Base</p>
+
+        <!-- Placa Base -->
+        <div class="pair">
+            <div class="pair-images">
+                <img src="img/placa1.png" alt="Placa 1">
+                <img src="img/placa2.png" alt="Placa 2">
+            </div>
+            <p class="comparison">Placa 1: Soporta hasta 64GB RAM. Placa 2: Mejor sistema de audio y más puertos USB.</p>
         </div>
-        <div class="item">
-            <img src="img/ssd1.png" alt="SSD">
-            <p>Disco SSD</p>
+
+        <!-- Disco SSD -->
+        <div class="pair">
+            <div class="pair-images">
+                <img src="img/ssd1.png" alt="SSD 1">
+                <img src="img/ssd2.png" alt="SSD 2">
+            </div>
+            <p class="comparison">SSD 1: 500GB, velocidad estándar. SSD 2: 1TB, velocidad NVMe más rápida.</p>
         </div>
-        <div class="item">
-            <img src="img/grafica1.png" alt="Tarjeta Gráfica">
-            <p>Tarjeta Gráfica</p>
+
+        <!-- Tarjeta Gráfica -->
+        <div class="pair">
+            <div class="pair-images">
+                <img src="img/grafica1.png" alt="Gráfica 1">
+                <img src="img/grafica2.png" alt="Gráfica 2">
+            </div>
+            <p class="comparison">Gráfica 1: Ideal para juegos a 1080p. Gráfica 2: Mejor rendimiento 4K y ray tracing.</p>
         </div>
-        <div class="item">
-            <img src="img/cooler1.png" alt="Disipador">
-            <p>Disipador</p>
+
+        <!-- Disipador / Cooler -->
+        <div class="pair">
+            <div class="pair-images">
+                <img src="img/cooler1.png" alt="Cooler 1">
+                <img src="img/cooler2.png" alt="Cooler 2">
+            </div>
+            <p class="comparison">Cooler 1: Silencioso, básico. Cooler 2: Mayor refrigeración para overclocking.</p>
         </div>
-        <div class="item">
-            <img src="img/fuente1.png" alt="Fuente de Alimentación">
-            <p>Fuente de Alimentación</p>
+
+        <!-- Fuente de Alimentación -->
+        <div class="pair">
+            <div class="pair-images">
+                <img src="img/fuente1.png" alt="Fuente 1">
+                <img src="img/fuente2.png" alt="Fuente 2">
+            </div>
+            <p class="comparison">Fuente 1: 500W, suficiente para PC básica. Fuente 2: 750W, modular y eficiente.</p>
         </div>
-        <div class="item">
-            <img src="img/ram1.png" alt="Memoria RAM">
-            <p>Memoria RAM</p>
+
+        <!-- Memoria RAM -->
+        <div class="pair">
+            <div class="pair-images">
+                <img src="img/ram1.png" alt="RAM 1">
+                <img src="img/ram2.png" alt="RAM 2">
+            </div>
+            <p class="comparison">RAM 1: 8GB DDR4, estándar. RAM 2: 16GB DDR4, más velocidad y multitarea.</p>
         </div>
     </div>
 </body>
